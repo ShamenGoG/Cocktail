@@ -23,7 +23,8 @@ const getAllCocktailsByName =async(e)=>{
 const getAllCocktailDetail=async(id)=>{
     const res = await fetch(API_GET_DETAIL + id)
     const req = await res.json()
-    console.log(req);
+    console.log(req.drinks[0]);
+    renderOneCocktail(req.drinks[0])
 }
 
 
@@ -52,8 +53,35 @@ const renderCocktails = (drinks)=>{
     })
 }
 
+const renderOneCocktail=(cocktail)=>{
+    output.innerHTML = ''
+    let btn = document.createElement('btn')
+    btn.textContent = 'Go back'
+    btn.addEventListener('click', getAllCocktails)
+    let img = document.createElement('img')
+    let name = document.createElement('h1')
+    let descr = document.createElement('h4')
+    let glass = document.createElement('b')
+    let list = document.createElement('ul')
+    img.src = cocktail.strDrinkThumb
+    name.textContent = 'Name ' + cocktail.strDrink
+    descr.textContent = 'Instruction: ' +cocktail.strInstructions
+    glass.textContent = 'Glass: '+cocktail.strGlass
+    let ul = document.createElement('ul')
+    let li_1 = document.createElement('li')
+    let li_2 = document.createElement('li')
+    let li_3 = document.createElement('li')
+    let li_4 = document.createElement('li')
+    li_1.textContent=`${cocktail.strIngredient1}` / `${cocktail.strMeasure1}`
+    li_2.textContent=`${cocktail.strIngredient2}` / `${cocktail.strMeasure2}`
+    li_3.textContent=`${cocktail.strIngredient3}` / `${cocktail.strMeasure3}`
+    li_4.textContent=`${cocktail.strIngredient4}` / `${cocktail.strMeasure4}`
+    ul.append(li_1,li_2,li_3,li_4)
+    output.append(btn,img,name,descr,glass,ul)
+}
+
 // 1 - перерисовать output
 // 2 - отобразить кнопку назад которая вызовет функцию GetAllCocktails
 // 3 - отобразить данные картинку название описание стакан ингридиенты и пропорции
 // 4 - сделать максимально красиво
-// 5 - запушить на гитхаб
+// 5 - создать отдельную ветку и в нее заглушить 
