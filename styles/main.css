@@ -1,0 +1,52 @@
+
+body{
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUPDxIVFRUVFRcVFRUVFxgXFRcVFx0dFxcVFRcdHSggHR0lHRcdITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDisZFRktLS0rKysrNys3KystNy03Ky0tLSsrLSstLS03Nzc3NzctKysrKzc3LS03LSstNystK//AABEIAI4BYwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQAHA//EABwQAQEBAQEBAQEBAAAAAAAAAAAB8BHRweECIf/EABcBAQEBAQAAAAAAAAAAAAAAAAABBQP/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDmSxCjm0VhDCFKFBhTbeAoUGFBShQYUAig7b8Yq/yUGbb1QUikSbbywCixIs23pVixosBV4zcBIyyMA3bezhVLtuAN23hpVKAXbeylRog0aVSgA7b9Q0QaN23io0QaNKjQGjSoiBUpUaAjSqURGZgYoJQFhRIsFOLBhQChQYUFOLBhQCOCQpQhiwU5ViRYBQoMIVZSm28kWApbb9KiqN23lagN23kKjREu29NWpQG7bwlRog1LVqUAG7bxDRBo0qIg0aVGgNGlRog0aVGgKValERmYGIVgFCgwoKUKDCgFCgwoKcWDCgEcAoKf87bywYsFMoJQCm28QQoKUWbb0xYBFtvwVQWVtt+yIC1K1Sgm2/JWqUE236VqUQala7byUBGkNEGjVqbb8INGlRu29A0SoiDRq1KApVGiMyKDKJQCijCFNYMKAUKDCgpQoMpQCKCUFL+dt6pRlWUD7tvigQoKU23qgdLoFKu2/DKsopLtv09boFKndt8krdBmS1Og3UrWpREqNdt5LQSjVt2300Eo1RoiUVtG7b0iUatS7bwDRKjRBo0qNBKKpREZmBiAgKFBiwDiwerBThTbeGLAOFAhQUyAoKc23lgyrAPu2+2USgpd23xdCL0DlboxYBdXoL0UpU6MbbfoXrdSp3bfCL1LUSg1qda7b09BqlrXbeGiIlZASito0RKNUaCUaVoCJUq0aCVKtERmRgYgKAUWDCAoUDpQU4s23piwDhQJSlFNYBgUKBKsopkCwDUJdt9vRTihKsAuqHV6BROp1O7b4C6iWt3bfQzWp1LQa1Go2iNUrWjQYVGiNRW0aCUatGiNRWiCVK1SiIjJQTb/ABUYGVFAosGLAOLKKwU+rKMWAcKUIsA+l0ClFKUpQi9B6daUClFPq9Du2+XoHK3Q7tvt6BdXodXoFK3R6ndt9Bdbo9boKlqdS0F6nUtToNalrWpaInUtbqWglRrR6I3RtUaDUVtGg1G1alERGSg23+sjCMoqKUVIoEsFYBrKEKCnFgQuga9BZQOLBlWUU16C9A+qHdt9vQNuh3bfKKXVC1egUbodboFawt0FSp1LRCtHrIDVKlqUF7tvp6yCNUSoDdGslBqjURGS1koJUVKDIyCKqMBSqMUUliNAOL0CAosGLKKa9DpAUqyjFAur0OqKfV6CgfW6HV6BWr0LVBZW6PW6BWt3bfT1gXqW7b5Op0C6PW6gN1rUtS0Rup1OtQZGo9BupWtSiMK0eg1StalBkVBEZOsD/9k=);
+
+
+}
+
+
+
+#output{
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input{
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    left: 30%;
+}
+
+btn{
+    position: absolute;
+    right: 400px;
+    top: -45px;
+    border-radius: 2px black;
+}
+
+
+
+h1{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+b{
+    font-size: 20px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+
+}
